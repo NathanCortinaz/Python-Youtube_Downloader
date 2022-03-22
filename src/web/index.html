@@ -11,32 +11,7 @@
     </head>
 
     <body class="align">
-
-        <div class="grid">
-
-            <form action="https://httpbin.org/post" method="POST" class="form login">
-
-            <div class="form__field">
-                <label>
-                <div class="icon">
-                    <svg fill="currentColor">
-                    <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                    </svg>
-                </div>
-                </label>
-                
-                <input id="link" type="text" name="username" class="form__input" placeholder="Enter YouTube URL here" required>
-            </div>
-
-            <div class="form__field">
-                <form>
-                    <input type='submit' value='DOWNLOAD'onclick="ytDownload()" >
-                </form>
-            </div>
-            
-        </div>
-
+        <input type="text" id="link" name="link" placeholder="Enter YouTube URL here" required />
+        <button type="button" id="button" onclick="ytDownload_py()">Download</button>
     </body>
-
 </html>
-

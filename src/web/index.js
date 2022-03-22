@@ -1,4 +1,7 @@
 function ytDownload_py() {
-    const link = document.getElementById('link_input').value;
-    eel.ytDownload(data)(setImage);
+    const link = document.getElementById('link').value;
+    response = eel.ytDownload(link);
+    if (response) {
+        alert('Finished downloading!');
+    }
 }
