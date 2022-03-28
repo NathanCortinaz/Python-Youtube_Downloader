@@ -1,8 +1,6 @@
-from __future__ import unicode_literals
 import eel
 from pytube import YouTube
 import os
-import subprocess
 
 eel.init(f'{os.path.dirname(os.path.realpath(__file__))}/web')
 
@@ -21,7 +19,6 @@ def ytDownload(link: str, path_to_save: str = "./", resolution: str = "720p"):
 @eel.expose
 def openFolder():
     os.startfile(os.getcwd())
-    #subprocess.Popen(r'explorer /select,"'+os.getcwd()+'"')
 
 
 eel.start('index.html', size=(720, 600))
